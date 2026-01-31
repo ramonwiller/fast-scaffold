@@ -1,0 +1,59 @@
+[project]
+name = "fast-scaffold"
+version = "0.1.1"
+description = "CLI para gerar scaffolding de projetos FastAPI"
+readme = "README.md"
+requires-python = ">=3.10"
+
+authors = [
+    { name = "Ramon Willer", email = "willer.ramon@gmail.com" }
+]
+
+license = "MIT"
+license-files = ["LICENSE"]
+
+keywords = [
+    "fastapi",
+    "cli",
+    "scaffold",
+    "scaffolding",
+    "code-generator",
+    "typer",
+    "backend",
+    "api"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Framework :: FastAPI",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+dependencies = [
+    "mako (>=1.3.10,<1.4.0)",
+    "typer (>=0.21.1,<0.22.0)"
+]
+
+[project.urls]
+Homepage = "https://github.com/ramonwiller/fast-scaffold"
+Repository = "https://github.com/ramonwiller/fast-scaffold"
+Documentation = "https://github.com/ramonwiller/fast-scaffold"
+Issues = "https://github.com/ramonwiller/fast-scaffold/issues"
+
+[project.scripts]
+fast-scaffold = "fast_scaffold.cli:main"
+
+[tool.poetry]
+packages = [{ include = "fast_scaffold", from = "src" }]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
