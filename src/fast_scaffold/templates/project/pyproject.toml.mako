@@ -3,7 +3,7 @@ name = "${project_name}"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Ramon Willer",email = "willer.ramon@gmail.com"}
+    {name = "Your Name",email = "you@example.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13,<3.14"
